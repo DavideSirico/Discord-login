@@ -1,0 +1,4 @@
+include discord_prova/schema.sql
+graft discord_prova/static
+graft discord_prova/templates
+global-exclude *.pyc
