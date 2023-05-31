@@ -1,22 +1,30 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Crea un account{% endblock %}</h1>
+<h1>{% block title %}Crea un account{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
+<div class="container">
   <form method="post">
     <label for="email">Email</label>
+    <br />
     <input name="email" id="email" required>
     <br />
     <label for="username">Username</label>
-    <input name="username" id="username" required> 
+    <br />
+    <input name="username" id="username" required>
     <br />
     <label for="password">Password</label>
+    <br />
     <input type="password" name="password" id="password" required>
     <br />
     <label for="birthday">Birthday</label>
+    <br />
     <input type="date" name="birthday" id="birthday" required>
+    <br />
     <input type="submit" value="Register">
+    <br />
   </form>
+</div>
 {% endblock %}
